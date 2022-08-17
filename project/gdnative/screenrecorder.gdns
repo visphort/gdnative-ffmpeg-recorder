@@ -1,0 +1,11 @@
+[gd_resource type="NativeScript" load_steps=2 format=2]
+
+[sub_resource type="GDNativeLibrary" id=1]
+entry/X11.64 = "res://gdnative/linux/libscreenrecorder.so"
+entry/OSX.64 = "res://gdnative/osx/libscreenrecorder.dylib"
+entry/Windows.64 = "res://gdnative/windows/libscreenrecorder.dll"
+dependency/X11.64 = [  ]
+
+[resource]
+class_name = "ScreenRecorder"
+library = SubResource( 1 )
