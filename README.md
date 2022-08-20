@@ -22,7 +22,11 @@ This project attempts to create a reasonable solution to this problem.
 
 You will have to first download the [Godot C++ Bindings][godot-cpp]
 for your target Godot version and then place the `godot-cpp` folder in the
-project root folder. Then to compile, run:
+project root folder.
+
+Then you will have to install the required libraries: `libavcodec`, `libavformat` and `libswscale` and their development packages on your system. Their names may vary based on the package manager and systems you are using.
+
+Then to compile, run:
 
 ```
 scons platform=<platform name> target=<debug/release>
